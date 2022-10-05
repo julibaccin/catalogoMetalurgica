@@ -5,7 +5,7 @@ export const List = ({o}) => {
   const [products, setProducts] = useState([]);
 
   const handleLoad = async () => {
-    const products = await getProducts();
+    const products = await getProducts("LINEA CALOR");
     setProducts(products);
   };
 
