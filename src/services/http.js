@@ -5,7 +5,6 @@ import qs from 'qs'
 
 
 const getProducts = async (linea) => {
-
     const queryGetProducts = qs.stringify({
         fields: ['linea', 'categoria', 'nombre'],
         sort: ['linea', 'categoria', 'nombre'],
