@@ -9,7 +9,7 @@ const getProducts = async (linea) => {
     const queryGetProducts = qs.stringify({
         fields: ['linea', 'categoria', 'nombre'],
         sort: ['linea', 'categoria', 'nombre'],
-        filters: {
+        filters: linea && {
             linea
         },
         pagination: {
